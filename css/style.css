@@ -1,0 +1,261 @@
+*{
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+.landing-bg{
+    background-image: url(../img/landing-bg.png);
+    background-size: cover;
+    background-position:left center;
+    background-repeat: no-repeat;
+    min-height: 550px;
+}
+.dropdown-btn{
+    background-color: white;
+    border-style: none;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.nav-link{
+    padding: 30px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    color: blue !important;
+    border-bottom: 2px solid red;
+    border-top: 1px solid blue;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+}   
+.dropdown-btn:hover{
+    color: blue !important;
+}
+.tab-icon{
+    padding: 10px;
+    background-color: blue;
+    width: 100%;
+    color: red !important;
+}
+.fa-brands:hover, .fa-sharp:hover{
+    color: red !important;
+    background-color: white !important;
+}
+
+.fa-brands, .fa-sharp{
+    color: white !important;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: blue !important;
+}
+.shape-container{
+    position: relative !important;
+}
+.shape1{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
+    z-index: 2 !important;
+}
+.shape1 .image{
+    width: 500px;
+    height: 450px;
+    object-fit:cover;
+    border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
+}
+.shape2{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
+    background-image: linear-gradient(to left,rgb(252, 158, 158),rgb(150, 150, 248));
+    animation: rotate 17s linear infinite;
+    z-index: 0;
+}
+
+/* this my creativity */
+@media only screen and (max-width: 850px) {
+    .shape1{
+        all: initial;
+        border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
+        width: 300px;
+        height: 250px;
+    }
+    
+    .shape2{
+        all: initial;
+        border-radius: 30% 70% 70% 30% / 30% 47% 53% 70% ;
+        width: 300px;
+        height: 250px;
+    }
+    .medical-kit{
+        display: block;
+        margin-bottom: 200px;
+        margin-left:400px ;
+        opacity: 0.4 !important;
+        margin-top: -225px
+    }
+    .glassmorph{
+        all: initial;
+        width: max-content !important;
+        height: max-content;
+    }
+    /* .bg-img{
+        background-image: url(./img/a762d38d33a48199ad2d7965834868d7.png);
+        width: 100%;
+        height: 100%;
+        
+    } */
+}
+.medical-kit{
+    opacity: 0.0;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+.button-app{
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(to left,rgb(252, 158, 158),rgb(150, 150, 248));
+    box-shadow: 1px 1px 10px  black;
+}
+.button-app:hover{
+    background-image: linear-gradient(to right,rgb(252, 158, 158),rgb(150, 150, 248));
+    text-decoration: none;
+    color: white;
+}
+
+/* appointment */
+/* .bg-appointment{
+    background-image: url(/img/appointment-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+
+} */
+.form-bg{
+    background: linear-gradient(to bottom left, #4ca9df,#292e91) !important;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+}
+.input-appoint{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    
+}
+.submit-button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    
+}
+.submit-button:hover{
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    
+    
+}
+
+
+.glassmorph{
+    width: 700px !important;
+    height: max-content;
+}
+
+
+/*** Footer ***/
+.footer {
+    background-image: url(../img/footer-bg.svg), url(../img/footer-bg-1.svg);
+    background-color: #0e165c;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    transition: .3s;
+}
+
+
+
+.footer .btn.btn-social:hover {
+    color: #fff;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;    
+    text-decoration: none;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #fff;
+}
+
+.footer .copyright a:hover {
+    color: blue;
+}
+/* testinomial */
+.testimonial-item {
+    text-align: center;
+    padding: 30px;
+  }
+  .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  /* contact page */
